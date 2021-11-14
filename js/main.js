@@ -25,3 +25,21 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+
+
+      const mobileLink = 'https://wa.me/2203736927';
+      const webLink =' https://web.whatsapp.com/send?phone=2203736927'
+
+      const cta = document.querySelector('.js-cta')
+
+      console.log(cta);
+
+
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+         cta.setAttribute('href', mobileLink)
+      }else{
+        cta.setAttribute('href', webLink)
+
+      }
+ 
